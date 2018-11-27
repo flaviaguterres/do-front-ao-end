@@ -1,24 +1,24 @@
-body {
-    font-family: 'SegoeUI', sans-serif;
-}
-
 header {
     background-color: #e24647;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    margin: 0 115px;
+    padding: 55px 60px 95px;
 }
 
 h1 {
     font-size: 40px;
+    font-family: Arial, "Roboto", sans-serif;
+    float: left;
 }
 
-h1, a {
-    color: #fff;
+nav {
+    font-size: 21px;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    float: right;
 }
 
 a {
     text-decoration: none;
-    font-size: 21px;
+    color: inherit;
 }

@@ -73,10 +73,56 @@ header {
 
 }
 ```
-- `background-color`: cor de fundo
-- `color`: cor da fonte
-- `font-size`: tamanho da fonte
+
+## Propriedades 
+
+- `background-color`: cor de fundo.
+- `color`: cor da fonte.
+- `font-size`: tamanho da fonte.
 - `text-decoration`: é usada para definir a formatação de  `underline`, `overline`, `line-through` ou `blink`.
+- `font-family`: lista de prioridades de familias de fontes e/ou nomes genéricos de famílias a serem especificados para um elemento.  
+Exemplo:
+```
+    font-family: Arial, "Roboto", sans-serif;
+```
+
+[Google Fonts](https://fonts.google.com/) é uma biblioteca com mais de 800 fontes livres licenciadas, um diretório web interativo para navegar na biblioteca, e APIs para usar convenientemente as fontes através de CSS e Android. ([Wikipédia]( https://pt.wikipedia.org/wiki/Google_Fonts))  
+
+- `float`: determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu container, onde textos e elementos em linha irão se posicionar ao seu redor. ([MDN]( https://developer.mozilla.org/pt-BR/docs/Web/CSS/float))     
+
+    **OBS**:   
+    O tamanho do elemento é igual ao tamanho do conteúdo (width e height).  
+    O que define o tamanho do elemento é o conteúdo.  
+    Nunca esconde o conteúdo.  
+    Novo contexto.
+
+- `overflow`: especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento.
+```
+    overflow: hidden; // o conteúdo é cortado e nenhuma barra de rolagem é exibida.
+```
+- `margin`: define a área de margem nos quatro lados do elemento.  
+    Pode ser utilizado das seguintes formas:
+    ```
+    margin: top right botton left;
+
+    margin: top/bottom right/left;
+
+    margin: top right/left bottom;
+
+    margin: top/right/bottom/left;  //valor único
+    ```
+
+- `padding`: define uma a distância entre o conteúdo de um elemento e suas bordas.  
+    Pode ser utilizado das seguintes formas:
+    ```
+    padding: top right botton left;
+
+    padding: top/bottom right/left;
+
+    padding: top right/left bottom;
+
+    padding: top/right/bottom/left;  //valor único
+    ```
 
 ## Reset CSS
 
@@ -94,4 +140,22 @@ Padrão de estilos básico que remove a formatação original aplicada pelo brow
 ## Pixel no CSS
 
 [Viewport Sizes](http://viewportsizes.com/)
+
+## Herança
+
+- `inherit`: palavra-chave do CSS que faz com que o elemento especificado **herde** a propriedade do seu elemento pai.
+
+Exemplo: 
+
+```
+header {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+```
+
 
