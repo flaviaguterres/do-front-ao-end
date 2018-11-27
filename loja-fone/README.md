@@ -141,7 +141,7 @@ Padrão de estilos básico que remove a formatação original aplicada pelo brow
 
 [Viewport Sizes](http://viewportsizes.com/)
 
-## Herança
+## Herança no CSS
 
 - `inherit`: palavra-chave do CSS que faz com que o elemento especificado **herde** a propriedade do seu elemento pai.
 
