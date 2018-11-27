@@ -1,3 +1,10 @@
+Body {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 header {
     background-color: #e24647;
     color: #fff;
