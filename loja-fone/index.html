@@ -6,22 +6,26 @@
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> 
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/container-store.css">
+        <link rel="stylesheet" href="css/header-store.css">
+        <link rel="stylesheet" href="css/button-store.css">
         
     </head>
 
     <body>
-        <header>
-            <h1> LOGO </h1>
-                <nav>
-                    <a href="http://www.collabcode.trainning"> Produtos </a>
-                    <a href="http://www.collabcode.trainning"> Serviços </a>
-                    <a href="http://www.collabcode.trainning"> Carrinho (10) </a>
-                </nav>
-        </header>
+        <div class="container-store">
+            <header class="header-store">
+                <h1 class="title"> LOGO </h1>
+                    <nav class="navigation">
+                        <a class="action" href="http://www.collabcode.trainning"> Produtos </a class="action">
+                        <a class="action" href="http://www.collabcode.trainning"> Serviços </a class="action">
+                        <a class="action last" href="http://www.collabcode.trainning"> Carrinho (10) </a>
+                    </nav>
+            </header>
 
-        <button> Comprar </button>
+            <button><a class="button-store" href="comprar.html"> Adiciona no carrinho </a></button>
+            <button><a class="button-store" href="comprar.html"> Comprar </a></button>
+        </div>
     </body>
 </html>

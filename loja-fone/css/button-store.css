@@ -1,0 +1,15 @@
+button {
+    background-color: #252c41;
+    font-size: 20px;
+    font-family: Arial, "Roboto", sans-serif;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+
+.button-store {
+    color: #fff;
+    text-decoration: none;
+}
