@@ -1,4 +1,4 @@
-## ANOTAÇÕES DAS AULAS 002, 003, 004
+## ANOTAÇÕES DAS AULAS 002, 003, 004, 005
 
 # Desafios da Aula 002
 
@@ -23,6 +23,14 @@
     - Recomendação de leitura: [Pare de chutar e aprenda as propriedades CSS de posicionamento](https://medium.com/collabcode/pare-de-chutar-e-aprenda-as-propriedades-css-de-posicionamento-603154655121);
     - Assistir aos vídeos do post;
     - Implementar os exemplos dos posts.
+
+---
+
+# Desafios da Aula 005
+
+1. **Desafio básico**: Incluir as propriedades do CSS no conteúdo da descrição do fone (tag `<dl>`) de acordo com o layout. Ex: font-family, color, espaçamento, posicionamento (lado esquerdo), etc;
+2. **Desafio intermediário**: Ajustar os botões "Adiciona no carrinho" e "Comprar" um do lado do outro com espaçamento;
+3. **Desafio avançado**: Incluir a imagem do fone ao lado da descrição. Dica: posicionamento.
 
 ---
 
@@ -93,17 +101,36 @@ Se no texto for necessário que o usuário clique em alguma informação para el
 
 - `<button></button>`: representa um botão clicável.
 
+- `<dl></dl>`: Definition List - engloba uma lista de pares de termos e descrições. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dl)  
+
+    Sintaxe:
+    ```
+    <dl>
+        <dt>Título</dt>
+        <dd>Texto texto texto texto.</dd>
+    </dl>
+    ``` 
+- `<dt></dt>`: Description Term - identifica um termo na lista de definição. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dt)
+
+- `<dd></dd>`: Description Details - fornece detalhes ou uma definição mais completa do termo precedente (definido por `<dt>`) numa lista de descrições (`<dl>`). [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dd)
+
+---
+
 ## CSS
 
 É uma linguagem de estilo utilizada para descrever a apresentação de um documento escrito em HTML e que tem as seguintes responsabilidades:
 
-- `<link rel="stylesheet" href="header.css">`: Faz o link com a folha de estilo da página.
+```
+// Faz o link com a folha de estilo da página.
+
+<link rel="stylesheet" href="header.css">
+```
 
 ---
 
 ## Seletor de tag
 
-Exemplo: 
+Sintaxe: 
 ```
 header { 
 
@@ -127,6 +154,22 @@ No CSS, a classe é utilizada da seguinte forma:
     }
     ```
 
+- **Classes compostas**  
+    Exemplo: 
+    ```
+    .button-store
+    .button-store-second
+
+    // Variação de um botão
+    .button-store
+    .button-store-second 
+    .-second
+
+    // No CSS
+    .button-store.-second {
+
+    }
+    ```
 ---
 
 ## Propriedades 
@@ -212,7 +255,7 @@ Valores do position:
 
     Com essas propriedades, o elemento se move em relação à página.
 
-    Exemplo:
+    Exemplos:
     ```
     // O elemento fica posicionado no topo e do lado esquerdo do browser. 
     position: absolute;
@@ -226,6 +269,38 @@ Valores do position:
     top: 0;
     right: 0;
     ```
+
+- `border`: propriedade que define a borda de um elemento. Normalmente, é utilizada com a seguinte sintaxe:  
+
+    ```
+    border: 1px solid #fff;
+    ```
+
+    Mais detalhes sobre a propriedade `border`: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border).
+
+- `vertical-align`: especifica o alinhamento vertical de um inline ou caixa table-cell. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/vertical-align)
+
+    É utilizada juntamente com o `display: inline-block`.  
+    Dica de lembrete: `vertical-align: inline-block`.
+
+    Sintaxe:
+    ```
+    vertical-align: baseline; //valor padrão
+    vertical-align: top;
+    vertical-align: middle;
+    vertical-align: bottom;
+    ```
+    **OBS**: O vertical-align não funciona para tudo, precisa ter dois elementos, um do lado do outro.  
+
+- `box-sizing`: é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browser) que não suportam corretamente a especificação da propriedade CSS box model. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing)  
+
+    Sintaxe:
+    ```
+    box-sizing: content-box
+    box-sizing: border-box
+    box-sizing: inherit
+    ```
+
 ---
 
 ## Unidades de medidas CSS  
@@ -252,6 +327,8 @@ Padrão de estilos básico que remove a formatação original aplicada pelo brow
 
 **OBS**: O link do reset CSS deve estar **SEMPRE** antes do link do CSS da página.
 
+**Dica**: Não mexa ou altere o reset para evitar problemas com a equipe de desenvolvimento.
+
 ---
 
 ## Como funcionam as cores?
@@ -271,22 +348,34 @@ Padrão de estilos básico que remove a formatação original aplicada pelo brow
 
 - `inherit`: palavra-chave do CSS que faz com que o elemento especificado **herde** a propriedade do seu elemento pai.
 
-Exemplo: 
+    Exemplo: 
 
-```
-header {
-    color: #fff;
-}
+    ```
+    header {
+        color: #fff;
+    }
 
-a {
-    text-decoration: none;
-    color: inherit; 
-}
-```
+    a {
+        text-decoration: none;
+        color: inherit; 
+    }
+    ```
 ---
 
 ## Refatoração de código  
 
 Criando classes e organizando arquivos. Não serão mais utilizados seletores de tag no CSS, apenas seletores de classes.
+
+---
+
+## Emmet  
+Emmet é um plugin para vários editores de texto populares que melhora muito o fluxo de trabalho de HTML e CSS.  
+[Documentação Emmet](https://docs.emmet.io/)
+
+---
+
+## Call to Action (CTA)
+
+O Call to Action (CTA) é qualquer chamada — visual ou textual — que leve o leitor ou visitante de uma página a realizar alguma ação. Pode ser usado em sites, blogs, email e anúncios. ([Marketing de Conteúdo](https://marketingdeconteudo.com/o-que-e-cta/))
 
 
