@@ -3,7 +3,9 @@
 # Desafios da Aula 002
 
 1. **Desafio básico**: Colocar o tamanho da fonte dos links de acordo com o layout;
+
 2. **Desafio intermediário**: Modificar a família da fonte indicada no layout ou de sua preferência;
+
 3. **Desafio avançado**: Alinhar a logo e o menu de navegação.
 
 ---
@@ -11,8 +13,11 @@
 # Desafios da Aula 003
 
 1. **Desafio básico**: Escolher a propriedade e fazer o espaçamento no menu de navegação;
+
 2. **Desafio intermediário**: Criar o botão COMPRAR (fora da tag header);
+
 3. **Desafio avançado**: Centralizar o elemento header verticalmente;
+
 4. **Desafio extra**: Escolher um tema ou algum assunto que foi abordado na aula e escrever/explicar para alguém do grupo. Ou escrever um texto no medium sobre esse tema/assunto.
 
 ---
@@ -28,9 +33,21 @@
 
 # Desafios da Aula 005
 
-1. **Desafio básico**: Incluir as propriedades do CSS no conteúdo da descrição do fone (tag `<dl>`) de acordo com o layout. Ex: font-family, color, espaçamento, posicionamento (lado esquerdo), etc;
+1. **Desafio básico**: Incluir as propriedades do CSS no conteúdo da descrição do fone (tag `<dl>`) de acordo com o layout. Ex: font-family, color, espaçamento, posicionamento (lado esquerdo), etc;  
+
 2. **Desafio intermediário**: Ajustar os botões "Adiciona no carrinho" e "Comprar" um do lado do outro com espaçamento;
+
 3. **Desafio avançado**: Incluir a imagem do fone ao lado da descrição. Dica: posicionamento.
+
+---
+
+# Desafios da Aula 006
+
+1. **Desafio básico**: Adicionar as estrelas na descrição do produto com espaçamento;
+
+2. **Desafio intermediário**: Adicionar a busca no header e posicioná-la;
+
+3. **Desafio avançado**: Alinhar os botões embaixo da descrição do produto.
 
 ---
 
@@ -94,6 +111,18 @@ Se no texto for necessário que o usuário clique em alguma informação para el
     - A tag `<a>` pode ser utilizada com a função de botão clicável.
 
     **OBS**: Todos os atributos ficam na tag de abertura, nunca na tag de fechamento.
+
+- `<figure></figure>`: representa o conteúdo independente, frequentemente com uma legenda `<figcaption>`, e é normalmente referido como uma única unidade. Geralmente é uma imagem, uma ilustração, um diagrama, um trecho de código ou uma esquema que é referenciado no texto principal.  
+
+    Sintaxe:
+    ```
+    <figure>
+        <img src="img/fone.png" alt="Fone de ouvido">	
+        <figcaption>Fone de ouvido disponível</figcaption>
+    </figure>
+    ```
+
+- `<img>`: representa a inseração de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento `<figure>` e `<figcaption>`.
 
 ---
 
@@ -233,11 +262,11 @@ Exemplo:
 
 - `display`: especifica o tipo de caixa de renderização usada por um elemento.  
     ```
-    `display: inline;` // Deixa os elementos na mesma linha. Não permite definir width e height.
+    `display: inline;` // Deixa os elementos na mesma linha. Não permite definir width e height. Ganha o comportamento de um conteúdo.
 
     display: block; // Não deixa os elementos na mesma linha. Permite definir width e height.
 
-    display: inline-block; // Une os comportamentos das propriedades inline e block. Ou seja, deixa os elementos na mesma linha e permite definir width e height.
+    display: inline-block; // Une os comportamentos das propriedades inline e block. Ou seja, deixa os elementos na mesma linha, ganha o comportamento de um conteúdo e permite definir width e height. 
     ```
 - `position`: define alternativas para posicionar elementos.  
 Valores do position:  
@@ -299,6 +328,26 @@ Valores do position:
     box-sizing: content-box
     box-sizing: border-box
     box-sizing: inherit
+    ```
+- `text-transform`: especifica como capitalizar um texto de um elemento. Pode ser usado para que o texto apareça com todas as letras maiúsculas  ou todas minúsculas, ou com cada palavra em maiúscula.  
+
+    Sintaxe:
+    ```
+    text-transform: uppercase; //Todas as letras maiúsculas
+    text-transform: lowercase; // Todas as letras minúsculas
+    ```
+- `border-radius`: permite definir como bordas arredondadas são. A curva de cada esquina é definida usando um ou dois raios, definindo sua forma: círculo ou elipse. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/border-radius)  
+
+    Sintaxe: 
+    ```
+    /* O raio é definido para todos os 4 lados */
+    border-radius: 10px;
+
+    /* O raio é definido para o lado superior direito */
+    border-top-right-radius: 150px;
+
+    /* O raio é definido para o lado inferior direito */
+    border-bottom-right-radius: 150px;
     ```
 
 ---
@@ -368,6 +417,14 @@ Criando classes e organizando arquivos. Não serão mais utilizados seletores de
 
 ---
 
+## Metodolodias CSS
+
+- **Metodologia BEM (Block, Element, Modifier)**: ​​é uma abordagem baseada em componentes para desenvolvimento web. A ideia por trás disso é dividir a interface do usuário em blocos independentes. Isso torna o desenvolvimento da interface fácil e rápido, mesmo com uma interface complexa, e permite a reutilização de código existente sem copiar e colar.   
+[Documentação da metodologia BEM](https://en.bem.info/methodology/quick-start/)  
+[Metodologia BEM para criar código legível - Maujor](https://www.maujor.com/tutorial/metodologia-bem-para-criar-codigo-legivel.php)
+
+---
+
 ## Emmet  
 Emmet é um plugin para vários editores de texto populares que melhora muito o fluxo de trabalho de HTML e CSS.  
 [Documentação Emmet](https://docs.emmet.io/)
@@ -377,5 +434,11 @@ Emmet é um plugin para vários editores de texto populares que melhora muito o 
 ## Call to Action (CTA)
 
 O Call to Action (CTA) é qualquer chamada — visual ou textual — que leve o leitor ou visitante de uma página a realizar alguma ação. Pode ser usado em sites, blogs, email e anúncios. ([Marketing de Conteúdo](https://marketingdeconteudo.com/o-que-e-cta/))
+
+---
+
+## SEO
+
+SEO (Search Engine Optimization - Otimização dos Mecanismos de Pesquisa) é o processo de fazer com que um sítio fique mais visível nos resultados da procura, também denominado melhoramento na classificação da busca. [(MDN)](https://developer.mozilla.org/pt-BR/docs/Glossario/SEO)
 
 
