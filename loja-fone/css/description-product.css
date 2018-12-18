@@ -1,15 +1,11 @@
 .description-product {
     font-family: Arial, "Roboto", sans-serif; 
     color: #fff;
-    /* float: right;
-    width: 550px; */
 }
 
 .description-product > .title {
     font-size: 25px;
     margin-bottom: 100px;
-    /* line-height: 1.2;
-    margin: 30px 0 30px 0; */
 }
 
 .description-product > .item {
@@ -34,10 +30,6 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 30px;
-}
-
-.description-product > .details.-more {
-    margin-bottom: 98px;
 }
 
 .description-product .action {
