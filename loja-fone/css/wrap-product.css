@@ -3,3 +3,8 @@
     width: 554px;
     vertical-align: middle;
 }
+
+.wrap-product > .buttons {
+    position: absolute;
+    bottom: 65px;
+}
