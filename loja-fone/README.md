@@ -47,7 +47,17 @@
 
 2. **Desafio intermediário**: Adicionar a busca no header e posicioná-la;
 
-3. **Desafio avançado**: Alinhar os botões embaixo da descrição do produto.
+3. **Desafio avançado**: Alinhar os botões embaixo da descrição do produto.  
+
+# Desafios da Aula 007
+
+1. **Desafio básico**: Modificar o cursor do mouse ao passar por cima de um elemento clicável (Dica: pointer);
+
+2. **Desafio intermediário**: Inverter as cores dos botões quando o mouse passa em cima:
+    - No botão COMPRAR, a cor de fundo deve ficar branca e a cor da fonte, azul.
+    - No botão ADICIONA NO CARRINHO, a cor de fundo deve ficar vermelha e a cor da fonte, branca. ;
+
+3. **Desafio avançado**: Adicionar e posicionar o coração.
 
 ---
 
@@ -112,7 +122,7 @@ Se no texto for necessário que o usuário clique em alguma informação para el
 
     **OBS**: Todos os atributos ficam na tag de abertura, nunca na tag de fechamento.
 
-- `<figure></figure>`: representa o conteúdo independente, frequentemente com uma legenda `<figcaption>`, e é normalmente referido como uma única unidade. Geralmente é uma imagem, uma ilustração, um diagrama, um trecho de código ou uma esquema que é referenciado no texto principal.  
+- `<figure></figure>`: representa o conteúdo independente, frequentemente com uma legenda `<figcaption>`, e é normalmente referido como uma única unidade. Geralmente é uma imagem, uma ilustração, um diagrama, um trecho de código ou uma esquema que é referenciado no texto principal. 
 
     Sintaxe:
     ```
@@ -124,6 +134,18 @@ Se no texto for necessário que o usuário clique em alguma informação para el
 
 - `<img>`: representa a inseração de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento `<figure>` e `<figcaption>`.
 
+
+ - `<input>`: é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um `<input>` varia consideravelmente dependendo do valor de seu atributo type. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input)  
+
+   - Atributos:
+   1. `type`: O tipo de controle a ser exibido. O tipo padrão é text, se este atributo não for especificado. Exemplo: **text** (padrão), **email**, **search**, **date**, etc.
+   2. `placeholder`: Uma dica para o usuário do que ele pode inserir no controle. O texto do atributo não deve conter quebras de linha. Este atributo é aplicado quando o valor do atributo type é **text**, **search**, **tel**, **url** ou **email**; caso contrário, ele é ignorado.  
+
+   Sintaxe:
+   ```
+    <input type="text" name="input" value="Digite aqui">
+   ```
+   
 ---
 
 ## Elementos HTML
@@ -157,16 +179,21 @@ Se no texto for necessário que o usuário clique em alguma informação para el
 
 ---
 
-## Seletor de tag
+## Seletores
 
-Sintaxe: 
-```
-header { 
+Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores)
 
-}
-```
+1. Seletor de tag:
 
-- Seletores com `id`: atributo que deve ser utilizado apenas em **um elemento**. Recomenda-se que seja utilizado um id por página.  
+    Sintaxe: 
+    ```
+    header { 
+
+    }
+    ```
+    No CSS, este código inteiro é uma regra. Esta regra inicia com `header`, que é um seletor. Ele seleciona os elementos do DOM aos quais a regra se aplica.
+
+2. Seletores com `id`: atributo que deve ser utilizado apenas em **um elemento**. Recomenda-se que seja utilizado um id por página.  
 No CSS, o id é utilizado da seguinte forma:
 
     ```
@@ -175,7 +202,7 @@ No CSS, o id é utilizado da seguinte forma:
     }
     ```
 
-- Seletores com `class`: atributo que pode ser utilizado em vários elementos.   
+3. Seletores com `class`: atributo que pode ser utilizado em vários elementos.   
 No CSS, a classe é utilizada da seguinte forma:
     ```
     .class-name {
@@ -189,15 +216,27 @@ No CSS, a classe é utilizada da seguinte forma:
     .button-store
     .button-store-second
 
-    // Variação de um botão
+    /* Variação de um botão */
     .button-store
     .button-store-second 
     .-second
 
-    // No CSS
+    /* No CSS */
     .button-store.-second {
 
     }
+
+    /* Pega o elemento que está diretamente abaixo (irmão) do item -star */
+    .description-product > .item.-star + .item
+    ```
+
+4. **Seletor de atributo**  
+    Dentro dos colchetes você insere o nome do atributo, opcionalmente seguido por um operador correspondente e um valor. 
+
+    Sintaxe: 
+    ```
+    /* Seleciona os elementos do tipo "search" */
+    .header-store [type="search"]
     ```
 ---
 
