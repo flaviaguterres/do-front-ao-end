@@ -56,7 +56,7 @@
 2. **Desafio intermediário**: Inverter as cores dos botões quando o mouse passa em cima:
 
    - No botão COMPRAR, a cor de fundo deve ficar branca e a cor da fonte, azul.
-   - No botão ADICIONA NO CARRINHO, a cor de fundo deve ficar vermelha e a cor da fonte, branca. ;
+   - No botão ADICIONA NO CARRINHO, a cor de fundo deve ficar branca e a cor da fonte, vermelha.
 
 3. **Desafio avançado**: Adicionar e posicionar o coração.
 
