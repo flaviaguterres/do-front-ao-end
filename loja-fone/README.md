@@ -49,6 +49,8 @@
 
 3. **Desafio avançado**: Alinhar os botões embaixo da descrição do produto.
 
+---
+
 # Desafios da Aula 007
 
 1. **Desafio básico**: Modificar o cursor do mouse ao passar por cima de alguns elementos clicáveis (Botão "Adiciona no carrinho", LOGO e nas estrelinhas). Dica: pointer;
@@ -59,6 +61,16 @@
    - No botão ADICIONA NO CARRINHO, a cor de fundo deve ficar branca e a cor da fonte, vermelha.
 
 3. **Desafio avançado**: Adicionar e posicionar o coração.
+
+---
+
+# Desafios da Aula 008
+
+1. **Desafio básico**: Fazer com que os elementos "coração" e "estrelas" aumentem um pouquinho ao passar o mouse por cima;
+
+2. **Desafio intermediário**: Fazer com que apareça uma linha (borda) de 1px embaixo dos elementos do `<nav>` ao passar o mouse por cima;
+
+3. **Desafio avançado**: Fazer animação na linha (borda) embaixo dos elementos do `<nav>`. Deve crescer da esquerda para a direita ao passar o mouse por cima.
 
 ---
 
@@ -137,7 +149,7 @@
 
 - `<img>`: representa a inseração de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento `<figure>` e `<figcaption>`.
 
-* `<input>`: é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um `<input>` varia consideravelmente dependendo do valor de seu atributo type. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input)
+* `<input>`: é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um `<input>` varia consideravelmente dependendo do valor de seu atributo type. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input))
 
   - Atributos:
 
@@ -156,7 +168,7 @@
 
 - `<button></button>`: representa um botão clicável.
 
-- `<dl></dl>`: Definition List - engloba uma lista de pares de termos e descrições. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dl)
+- `<dl></dl>`: Definition List - engloba uma lista de pares de termos e descrições. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dl))
 
   Sintaxe:
 
@@ -167,9 +179,9 @@
   </dl>
   ```
 
-- `<dt></dt>`: Description Term - identifica um termo na lista de definição. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dt)
+- `<dt></dt>`: Description Term - identifica um termo na lista de definição. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dt))
 
-- `<dd></dd>`: Description Details - fornece detalhes ou uma definição mais completa do termo precedente (definido por `<dt>`) numa lista de descrições (`<dl>`). [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dd)
+- `<dd></dd>`: Description Details - fornece detalhes ou uma definição mais completa do termo precedente (definido por `<dt>`) numa lista de descrições (`<dl>`). ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dd))
 
 ---
 
@@ -189,7 +201,7 @@
 
 Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores)
 
-1.  Seletor de tag:
+1.  **Seletor de tag**:
 
     Sintaxe:
 
@@ -201,7 +213,8 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
 
     No CSS, este código inteiro é uma regra. Esta regra inicia com `header`, que é um seletor. Ele seleciona os elementos do DOM aos quais a regra se aplica.
 
-2.  Seletores com `id`: atributo que deve ser utilizado apenas em **um elemento**. Recomenda-se que seja utilizado um id por página.  
+2.  **Seletores com** `id`  
+    Atributo que deve ser utilizado apenas em **um elemento**. Recomenda-se que seja utilizado um id por página.  
     No CSS, o id é utilizado da seguinte forma:
 
         ```
@@ -210,7 +223,8 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
         }
         ```
 
-3.  Seletores com `class`: atributo que pode ser utilizado em vários elementos.  
+3. **Seletores com** `class`  
+    Atributo que pode ser utilizado em vários elementos.  
     No CSS, a classe é utilizada da seguinte forma:
 
     ````
@@ -250,6 +264,22 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
    /* Seleciona os elementos do tipo "search" */
    .header-store [type="search"]
    ```
+
+5. **Pseudo-classes**  
+    É uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, `:hover` pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)) 
+
+    Sintaxe:
+
+    ```
+    .button-store:hover {
+        background-color: #fff;
+        color: #e24647;
+    }
+
+    .button-store:active {
+        transform: scale(0.9);
+    }
+    ```
 
 ---
 
@@ -303,7 +333,7 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
   padding: top/right/bottom/left;  //valor único
   ```
 
-- `clear`: especifica se um elementopode ter elementos flutuantes ao seu lado ou se devem ser movidos para baixo dele (clear). Se aplica a elementos flutuantes e não flutuantes. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/clear)
+- `clear`: especifica se um elementopode ter elementos flutuantes ao seu lado ou se devem ser movidos para baixo dele (clear). Se aplica a elementos flutuantes e não flutuantes. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/clear))
 
   ```
   clear: none;
@@ -353,9 +383,9 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
   border: 1px solid #fff;
   ```
 
-  Mais detalhes sobre a propriedade `border`: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border).
+  Mais detalhes sobre a propriedade `border`: ([MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border)).
 
-- `vertical-align`: especifica o alinhamento vertical de um inline ou caixa table-cell. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/vertical-align)
+- `vertical-align`: especifica o alinhamento vertical de um inline ou caixa table-cell. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/vertical-align))
 
   É utilizada juntamente com o `display: inline-block`.  
    Dica de lembrete: `vertical-align: inline-block`.
@@ -371,7 +401,7 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
 
   **OBS**: O vertical-align não funciona para tudo, precisa ter dois elementos, um do lado do outro.
 
-- `box-sizing`: é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browser) que não suportam corretamente a especificação da propriedade CSS box model. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing)
+- `box-sizing`: é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browser) que não suportam corretamente a especificação da propriedade CSS box model. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing))
 
   Sintaxe:
 
@@ -390,7 +420,7 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
   text-transform: lowercase; // Todas as letras minúsculas
   ```
 
-- `border-radius`: permite definir como bordas arredondadas são. A curva de cada esquina é definida usando um ou dois raios, definindo sua forma: círculo ou elipse. [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/border-radius)
+- `border-radius`: permite definir como bordas arredondadas são. A curva de cada esquina é definida usando um ou dois raios, definindo sua forma: círculo ou elipse. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/border-radius))
 
   Sintaxe:
 
@@ -404,6 +434,21 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
   /* O raio é definido para o lado inferior direito */
   border-bottom-right-radius: 150px;
   ```
+- `cursor`: especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/cursor))  
+
+    Sintaxe:
+    ```
+    cursor: pointer;
+    cursor: auto;
+    ```  
+- `transition`: é uma propriedade abreviada para `transition-property`, `transition-duration`, `transition-timing-function` e `transition-delay`. Ela permite definir a transição entre dois estados de um elemento. Estados diferentes podem ser definidos usando pseudo-classes tais como `:hover` ou `:active`; ou dinamicamente, usando javascript. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/transition))
+
+    Sintaxe:  
+
+    ```
+    /* Aplica em todas as propriedades modificadas */
+    transition: all 300ms linear;
+    ```
 
 ---
 
@@ -496,4 +541,20 @@ O Call to Action (CTA) é qualquer chamada — visual ou textual — que leve o 
 
 ## SEO
 
-SEO (Search Engine Optimization - Otimização dos Mecanismos de Pesquisa) é o processo de fazer com que um sítio fique mais visível nos resultados da procura, também denominado melhoramento na classificação da busca. [(MDN)](https://developer.mozilla.org/pt-BR/docs/Glossario/SEO)
+SEO (Search Engine Optimization - Otimização dos Mecanismos de Pesquisa) é o processo de fazer com que um sítio fique mais visível nos resultados da procura, também denominado melhoramento na classificação da busca. ([MDN](https://developer.mozilla.org/pt-BR/docs/Glossario/SEO))  
+
+---
+
+## Affordance  
+
+É a capacidade que um objeto (ou parte de uma interface) ser reconhecido e utilizado exatamente da maneira que foi projetado, mas sem a necessidade de uma explicação prévia. ([Entendendo affordance na prática](https://medium.com/trainingcenter/entendendo-affordance-na-pr%C3%A1tica-f41ec34dff2))  
+
+---
+
+## Usabilidade e UX
+
+[10 heurísticas de Jakob Nielsen.](http://blog.caelum.com.br/10-heuristicas-de-nielsen-uma-formula-pra-evitar-erros-basicos-de-usabilidade/) (Atenção ao item 2).
+
+
+
+
