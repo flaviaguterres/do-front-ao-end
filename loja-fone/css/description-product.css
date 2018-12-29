@@ -18,11 +18,20 @@
     transform: translateX(-100%);
     left: -48px;
     top: 8px;
+    cursor: pointer;
 }
 
 .description-product > .item.-star {
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+.description-product .icon {
+    transition: transform 100ms linear;
+}
+
+.description-product .icon:hover {
+    transform: scale(1.2);
 }
 
 .description-product > .item.-star + .item {
