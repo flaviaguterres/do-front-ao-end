@@ -72,6 +72,10 @@
 
 3. **Desafio avançado**: Fazer animação na linha (borda) embaixo dos elementos do `<nav>`. Deve crescer da esquerda para a direita ao passar o mouse por cima.
 
+# Desafio da Aula 009
+
+1. **Desafio**: Compartilhar o que foi aprendido nessa aula com algum amigo ou pessoa próxima, ou escrever um post no medium.
+
 ---
 
 # Temas abordados nas aulas
@@ -283,7 +287,7 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
 
 ---
 
-## Propriedades
+## Propriedades CSS
 
 - `background-color`: cor de fundo.
 - `color`: cor da fonte.
@@ -381,6 +385,10 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
 
   ```
   border: 1px solid #fff;
+
+  /* Cria uma borda sólida de 1px somente embaixo do elemento na cor branca */
+  border-bottom: 1px solid #FFF;
+  
   ```
 
   Mais detalhes sobre a propriedade `border`: ([MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border)).
@@ -448,6 +456,37 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
     ```
     /* Aplica em todas as propriedades modificadas */
     transition: all 300ms linear;
+    ```
+- `transform-origin`: define a origem das transformações de um elemento. ([MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin))  
+
+    Sintaxe:
+    ```
+    transform-origin: center;
+    transform-origin: center left;
+    transform-origin: 50px 50px;
+    transform-origin: bottom right 60px;
+    ```
+
+---
+
+## Funções CSS
+
+- `scale()`: define uma transformação que redimensiona um elemento no plano 2D. Como o redimensionamento é definido por um vetor, ele pode transformar as dimensões verticais e horizontais em escalas diferentes. Seu resultado é um dado do tipo `<transform-function>`. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform-function/scale))  
+
+    Sintaxe:   
+    A função `scale()` é especificada com um ou dois valores, que representam a quantidade de redimensionamento a ser aplicada em cada direção.
+
+    ```
+    scale(sx)
+
+    scale(sx, sy)
+
+    /* Faz o elemento aumentar de tamanho */
+    transform: scale(1.2);
+
+    /* Faz o elemento diminuir de tamanho */
+    transform: scale(0.9);
+
     ```
 
 ---
@@ -553,7 +592,27 @@ SEO (Search Engine Optimization - Otimização dos Mecanismos de Pesquisa) é o 
 
 ## Usabilidade e UX
 
-[10 heurísticas de Jakob Nielsen.](http://blog.caelum.com.br/10-heuristicas-de-nielsen-uma-formula-pra-evitar-erros-basicos-de-usabilidade/) (Atenção ao item 2).
+[10 heurísticas de Jakob Nielsen.](http://blog.caelum.com.br/10-heuristicas-de-nielsen-uma-formula-pra-evitar-erros-basicos-de-usabilidade/) (Atenção ao item 2).  
+
+## HTTP e HTTPS
+
+- [Uma visão geral do HTTP (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview).  
+
+- [Desmistificando o protocolo HTTP – parte 1 (Blog Alura)](http://blog.alura.com.br/desmistificando-o-protocolo-http-parte-1/).
+
+- [Desmistificando o protocolo HTTP – parte 2 (Blog Alura)](http://blog.alura.com.br/desmistificando-o-protocolo-http-parte-2/).
+
+- [O que é e pra que serve o protocolo HTTP? Quando eu uso ele? (Gabs Ferreira)](http://gabsferreira.com/pra-que-serve-o-protocolo-http-quando-eu-uso-ele/).
+
+- [Qual é a diferença entre HTTP e HTTPS? (Blog Alura)](http://blog.alura.com.br/qual-e-diferenca-entre-http-e-https/).
+
+## SSH
+
+- [SSH Keys (Adriano Rosa)](https://adrianorosa.com/blog/seguranca/ssh-keys.html).
+
+- [Entendendo as diferenças entre Telnet e SSH (Blog Alura)](http://blog.alura.com.br/entendendo-as-diferencas-entre-telnet-e-ssh/).
+
+- [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/).
 
 
 
