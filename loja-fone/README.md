@@ -466,6 +466,20 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
     transform-origin: 50px 50px;
     transform-origin: bottom right 60px;
     ```
+- `max-width`: propriedade que estabelece a largura máxima de um elemento. Ele previne o valor usado da propriedade `width` de se tornar maior que o valor indicado pelo `max-width`. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/max-width))  
+
+- `max-height`: propriedade que define a altura máxima de um elemento. Previne que o valor usado da propriedade `height` seja maior que o valor especificado pelo `max-height`. ([MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/max-height)).
+
+    Sintaxe:
+    ```
+    max-width: 1235px;
+
+    max-width: 75%;
+
+    max-height: 952px;
+
+    max-height: 75%;
+    ```
 
 ---
 
@@ -562,6 +576,30 @@ Criando classes e organizando arquivos. Não serão mais utilizados seletores de
 - **Metodologia BEM (Block, Element, Modifier)**: ​​é uma abordagem baseada em componentes para desenvolvimento web. A ideia por trás disso é dividir a interface do usuário em blocos independentes. Isso torna o desenvolvimento da interface fácil e rápido, mesmo com uma interface complexa, e permite a reutilização de código existente sem copiar e colar.  
   [Documentação da metodologia BEM](https://en.bem.info/methodology/quick-start/)  
   [Metodologia BEM para criar código legível - Maujor](https://www.maujor.com/tutorial/metodologia-bem-para-criar-codigo-legivel.php)
+
+---
+
+## Responsividade
+
+- [Design Responsivo (MDN)](https://developer.mozilla.org/pt-BR/docs/Web_Development/Mobile/Design_responsivo).
+
+- [Site único e responsivo ou sites dedicados? (Blog Alura)](http://blog.alura.com.br/site-unico-e-responsivo-ou-sites-dedicados/).
+
+- [Como lidar com os limites de resolução em sites responsivos? (Blog Alura)](http://blog.alura.com.br/como-lidar-com-os-limites-de-resolucao-em-sites-responsivos/).
+
+- [Entendendo as diferenças entre design responsivo, adaptativo e mobile-first (Fernanda)](https://medium.com/@fnandaleite/entendendo-as-diferen%C3%A7as-entre-design-responsivo-adaptativo-e-mobile-first-ea3c61fc9181).
+
+- [A importância do design responsivo (Van Serradas)](https://brasil.uxdesign.cc/a-import%C3%A2ncia-do-design-responsivo-5f31966323d1).
+
+- [Otimizando e Organizando as Media Queries (Felipe Fialho)](https://www.felipefialho.com/blog/2015/otimizando-e-organizando-as-media-queries).
+
+- [Medindo o uso do breakpoint responsivo de um site (iMasters)](https://imasters.com.br/analytics/medindo-o-uso-do-breakpoint-responsivo-de-um-site).
+
+- [Design responsivo: Quais e quantos breakpoints utilizar? (Front-end Brasil)](https://github.com/frontendbr/forum/issues/220).
+
+- [Use sempre media queries baseadas no conteúdo da sua página (Sergio Lopes)](http://sergiolopes.org/media-queries-conteudo/).
+
+- [Usando Media Queries (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries).
 
 ---
 
