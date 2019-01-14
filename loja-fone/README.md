@@ -632,6 +632,10 @@ Criando classes e organizando arquivos. Não serão mais utilizados seletores de
 
 ## Responsividade
 
+- [The 100% correct way to do CSS breakpoints (freeCodeCamp)](https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862).
+
+- [Usando Media Queries (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries).
+
 - [Design Responsivo (MDN)](https://developer.mozilla.org/pt-BR/docs/Web_Development/Mobile/Design_responsivo).
 
 - [Site único e responsivo ou sites dedicados? (Blog Alura)](http://blog.alura.com.br/site-unico-e-responsivo-ou-sites-dedicados/).
@@ -649,8 +653,6 @@ Criando classes e organizando arquivos. Não serão mais utilizados seletores de
 - [Design responsivo: Quais e quantos breakpoints utilizar? (Front-end Brasil)](https://github.com/frontendbr/forum/issues/220).
 
 - [Use sempre media queries baseadas no conteúdo da sua página (Sergio Lopes)](http://sergiolopes.org/media-queries-conteudo/).
-
-- [Usando Media Queries (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries).
 
 ---
 
