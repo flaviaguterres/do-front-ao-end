@@ -300,6 +300,53 @@ Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Se
 
 ---
 
+## Especificidade de Seletores
+
+A especificação é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado. A especificação é baseada apenas nas regras impostas na composição de diferentes tipos de seletores. 
+
+**Como isso é calculado?**
+
+A espeficicação é calculada na concatenação  da contagem de cada tipo de seletor. Não é um peso aplicado na expressão correspondente. No caso de igualdade de especificação, a última declaração encontrada no CSS é aplicada ao elemento.  
+
+**Ordem crescente de especificação**
+
+- Seletores Universais
+- Tipo de Seletores
+- Classes seletoras
+- Atributos Seletores
+- Pseudo-classes
+- Seletores ID
+- Estilo Inline  
+
+**A exceção `!important`**  
+
+Quando a regra `!important` é utilizada na declaração do estilo, substitui qualquer outra declaração feita no CSS, onde quer que esteja na lista de declaração. Contudo, `!important` não tem nada haver com especificação.   
+
+**OBS**: Evitar o uso desse recurso, é gambiarra! 
+
+**A exceção `:not`**  
+
+A pseudo-classe de negação `:not` não é considerada uma pseudo-classe no cálculo de especificação. Contudo, seletores colocados na pseudo-class de negação são entendidos como seletores normais.
+
+**Exemplos de cálculo da pontuação**  
+
+| Seletor         | ID's |	Classes  |	Tag's  | Pontuação |
+|-----------------|------|-----------|---------|-----------|
+| strong          | 0    | 0         | 1       | 001       |
+| p strong        | 0    | 0         | 2       | 002       |
+| .nivelc         | 0 	 | 1 	     | 0       | 010       |
+| a:hover         | 0    | 1         | 1       | 011       |
+| div h1.niveld   | 0    | 1         | 2       | 012       |
+| #conteudo p     |	1    | 0         | 1       | 101       |
+| #conteudo       |	1    | 0         | 0       | 100       |
+
+Fonte:   
+- [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity)  
+- [A especificidade e o efeito cascata - Maujor](https://www.maujor.com/tutorial/especificidade.php)
+- [A guerra da especificidade CSS - Maujor](https://www.maujor.com/tutorial/specificity_wars.php)
+
+---
+
 ## Propriedades CSS
 
 - `background-color`: cor de fundo.
