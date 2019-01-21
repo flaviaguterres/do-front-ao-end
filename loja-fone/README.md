@@ -1,6 +1,6 @@
-## ANOTAÇÕES DAS AULAS 002, 003, 004, 005, 006, 007, 008
+# ANOTAÇÕES DAS AULAS 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012
 
-# Desafios da Aula 002
+## Desafios da Aula 002
 
 1. **Desafio básico**: Colocar o tamanho da fonte dos links de acordo com o layout;
 
@@ -10,7 +10,7 @@
 
 ---
 
-# Desafios da Aula 003
+## Desafios da Aula 003
 
 1. **Desafio básico**: Escolher a propriedade e fazer o espaçamento no menu de navegação;
 
@@ -22,7 +22,7 @@
 
 ---
 
-# Desafio da Aula 004
+## Desafio da Aula 004
 
 1. **Desafio**: aprofundar os estudos sobre posicionamento:
    - Recomendação de leitura: [Pare de chutar e aprenda as propriedades CSS de posicionamento](https://medium.com/collabcode/pare-de-chutar-e-aprenda-as-propriedades-css-de-posicionamento-603154655121);
@@ -31,7 +31,7 @@
 
 ---
 
-# Desafios da Aula 005
+## Desafios da Aula 005
 
 1. **Desafio básico**: Incluir as propriedades do CSS no conteúdo da descrição do fone (tag `<dl>`) de acordo com o layout. Ex: font-family, color, espaçamento, posicionamento (lado esquerdo), etc;
 
@@ -41,7 +41,7 @@
 
 ---
 
-# Desafios da Aula 006
+## Desafios da Aula 006
 
 1. **Desafio básico**: Adicionar as estrelas na descrição do produto com espaçamento;
 
@@ -51,7 +51,7 @@
 
 ---
 
-# Desafios da Aula 007
+## Desafios da Aula 007
 
 1. **Desafio básico**: Modificar o cursor do mouse ao passar por cima de alguns elementos clicáveis (Botão "Adiciona no carrinho", LOGO e nas estrelinhas). Dica: pointer;
 
@@ -64,7 +64,7 @@
 
 ---
 
-# Desafios da Aula 008
+## Desafios da Aula 008
 
 1. **Desafio básico**: Fazer com que os elementos "coração" e "estrelas" aumentem um pouquinho ao passar o mouse por cima;
 
@@ -74,13 +74,13 @@
 
 ---
 
-# Desafio da Aula 009
+## Desafio da Aula 009
 
 1. **Desafio**: Compartilhar o que foi aprendido nessa aula com algum amigo ou pessoa próxima, ou escrever um post no medium.
 
 ---
 
-# Desafios da Aula 010
+## Desafios da Aula 010
 
 1. **Desafio básico**: Descobrir o breakpoint do layout para começar a pensar em estilizar os componentes para se ajustarem aos diferentes tamanhos de telas.
 
@@ -88,7 +88,25 @@
 
 3. **Desafio avançado**: Implementar de fato o que foi pensado sobre os ajustes dos elementos nos breakpoints. OBS: até 320px.
 
-    Tentar distribuir de forma automática o menu no espaço disponível. Dica: flexbox ou display: inline-block.
+**Desafio Extra**: Tentar distribuir de forma automática o menu no espaço disponível. Dica: flexbox ou display: inline-block.
+
+---
+
+## Desafios da Aula 011
+
+1. **Desafio básico**: Diminuir o respiro do menu em relação ao elemento abaixo.
+
+2. **Desafio intermediário**: Fazer o gradiente da cor de fundo da página.
+
+3. **Desafio avançadoo**: Descobrir o motivo de, no Chrome, a versão mobile do site exibe a página de forma responsiva feita com os medias queries. Dica: uma linha no HTML resolve essa questão.
+
+---
+
+## Desafios da Aula 012
+
+**Desafio**: Escrever um post (medium ou github) sobre pixel físico e pixel do CSS e explicar as diferenças.
+
+**Sugestão de pesquisa para as próximas aulas**: Linguagem Javascript e API do browser. 
 
 ---
 
@@ -600,7 +618,23 @@ Novo contexto.
     transform: scale(0.9);
 
     ```
+- `linear-gradient`: função que cria uma imagem que consiste em uma transição progressiva entre duas ou mais cores ao longo de uma linha reta. Seu resultado é um objeto do tipo de dado `<gradient>`, que é um tipo especial de `<image>`. ([MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient))
 
+    Sintaxe: 
+
+    ```css
+    background: linear-gradient(#e66465, #9198e5);
+
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+
+    /* Exemplo utilizado no desafio do curso */
+    background-image: linear-gradient(to bottom, #252a34, #ff2e63); 
+    ```
+
+    **OBS**: 
+    - O gradient só funciona no background-image.
+    - O ideal é definir um `background-color` antes do `background-image` para o caso de algum dispositivo não reconhecer o gradient ou a imagem.
+    - É preciso definir uma altura no `html` e `body` para funcionar o `background-image`.
 ---
 
 ## Unidades de medidas CSS
@@ -700,6 +734,42 @@ Criando classes e organizando arquivos. Não serão mais utilizados seletores de
 - [Design responsivo: Quais e quantos breakpoints utilizar? (Front-end Brasil)](https://github.com/frontendbr/forum/issues/220).
 
 - [Use sempre media queries baseadas no conteúdo da sua página (Sergio Lopes)](http://sergiolopes.org/media-queries-conteudo/).
+
+### Responsividade no Chrome
+
+Para sinalizar aos navegadores que sua página se adaptará a todos os dispositivos, adicione uma metatag ao cabeçalho do documento (`<head>`):
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+Fonte: [Web design responsivo](https://developers.google.com/search/mobile-sites/mobile-seo/responsive-design?hl=pt-br)
+
+Na tag viewport, é possível habilitar ou desabilitar o zoom através do `user-scalable` com as seguintes propriedades: `minimum-scale`, `maximum-scale`, `initial-scale` e `user-scalable`.
+
+Exemplos:
+
+```html
+<!-- indica que o usuário pode aumentar até 4x a página e diminuir até pela metade -->
+<meta name="viewport" content="width=device-width, minimum-scale=0.5, maximum-scale=4">
+
+<!-- Controla o nível padrão de zoom -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Desabilita o zomm -->
+<meta name="viewport" content="width=device-width, user-scalable=no">
+```
+
+**OBS**: É interessante deixar o usuário dar zoom caso queira, já que este é um gesto comum ao usar a Web no celular.
+
+### Pixel físico vs pixel CSS
+
+- **Pixel físico**: número real de pixels na tela. Nos celulares modernos, é um número altíssimo, com ótima resolução, geralmente com densidade acima de 300 dpi (dots per inch).
+
+- **CSS pixel**: é o que usamos no HTML/CSS como px, representando um tamanho dentro do layout viewport. Quando colocamos a meta tag viewport com valor width=device-width, estamos dizendo que nosso CSS pixel é igual a um **Device pixel**.
+
+- **Device pixel**: é o número de pixels reportado pelo aparelho como sendo seu tamanho. É pensado pra ser um valor que ofereça conforto visual para o usuário olhando para aquele tamanho de tela. 
+
+Fonte: [Pixels, pixels ou pixels? Dicas de Web Mobile com viewport - Blog Caelum](http://blog.caelum.com.br/pixels-pixels-ou-pixels-dicas-de-web-mobile-com-viewport/)
 
 ---
 
