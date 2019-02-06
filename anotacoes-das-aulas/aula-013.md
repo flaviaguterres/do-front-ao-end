@@ -42,12 +42,12 @@ No arquivo `photo-product.css`, mover a propriedade `border-radius: 0;` do `@med
     console.log("$heart");
     ```
 
-`alert()` => exibe uma informação na tela.  
-`const $heart` => Cria uma variável chamada "heart" (pode usar com ou sem $).  
-`window` => janela (onde é exibida a página).  
-`document` => HTML.  
-`querySelector` => busca de seletor dentro do HTML.   
-`console.log` => Testa para ver se funciona.
+    `alert()` => exibe uma informação na tela.  
+    `const $heart` => Cria uma variável chamada "heart" (pode usar com ou sem $).  
+    `window` => janela (onde é exibida a página).  
+    `document` => HTML.  
+    `querySelector` => busca de seletor dentro do HTML.   
+    `console.log` => Testa para ver se funciona.
 
 **Passo 4:**
 - Criar um link para o arquivo `description-product.js`:
@@ -67,35 +67,35 @@ No arquivo `photo-product.css`, mover a propriedade `border-radius: 0;` do `@med
 
 - Atualização do processo lógico:
 
-```js
-/*
-1 - Ter a janela (browser) na mão => window => OK
-2 - Ter o HTML na mão => document => OK
-3 - Pegar o coração => window.document.querySelector(".-heart") => OK
-4 - Pegar clique no coração => $heart.addEventListener("click", handleClick); => OK
-5 - No momento que o usuário clicar, exibir o texto AE => console.log("AE"); => OK
-*/
-```
+    ```js
+    /*
+    1 - Ter a janela (browser) na mão => window => OK
+    2 - Ter o HTML na mão => document => OK
+    3 - Pegar o coração => window.document.querySelector(".-heart") => OK
+    4 - Pegar clique no coração => $heart.addEventListener("click", handleClick); => OK
+    5 - No momento que o usuário clicar, exibir o texto AE => console.log("AE"); => OK
+    */
+    ```
 
 - Arquivo `description-product.js`:
 
-```js
-const $heart = window.document.querySelector(".-heart");
+    ```js
+    const $heart = window.document.querySelector(".-heart");
 
-$heart.addEventListener("click", handleClick);
+    $heart.addEventListener("click", handleClick);
 
-function handleClick() {
-    console.log("AE");
-}
-```
+    function handleClick() {
+        console.log("AE");
+    }
+    ```
 
-`$heart.addEventListener` => Adiciona o ouvinte de um evento dentro do "heart".  
-`("click")` => É o evento. Podem ser passados dois valores dentro do parêntese.  
-`function` =>  Função.  
-`handleClick` => Nome da função (lidar com o clique).  
-`handleClick();` => chama/executa a função.
+    `$heart.addEventListener` => Adiciona o ouvinte de um evento dentro do "heart".  
+    `("click")` => É o evento. Podem ser passados dois valores dentro do parêntese.  
+    `function` =>  Função.  
+    `handleClick` => Nome da função (lidar com o clique).  
+    `handleClick();` => chama/executa a função.
 
-**OBS**: Quando é utilizado somente o nome da função (`handleClick`), significa que está sendo passada a função inteira para o browser e guarda dentro do evento de clique. Quando são utilizados os parênteses no nome da função (`handleclick()`), o browser executa a função no momento da leitura.
+    **OBS**: Quando é utilizado somente o nome da função (`handleClick`), significa que está sendo passada a função inteira para o browser e guarda dentro do evento de clique. Quando são utilizados os parênteses no nome da função (`handleclick()`), o browser executa a função no momento da leitura.
 
 ## 6. Desafios
 

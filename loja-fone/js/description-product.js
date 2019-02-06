@@ -1,9 +1,7 @@
 /*
-1 - Ter a janela (browser) na mão => window => OK
-2 - Ter o HTML na mão => document => OK
-3 - Pegar o coração => window.document.querySelector(".-heart") => OK
-4 - Pegar clique no coração => $heart.addEventListener("click", handleClick); => OK
-5 - No momento que o usuário clicar, exibir o texto AE => console.log("AE"); => OK
+Alterando o comportamento do coração quando é clicado utilizando:
+- if/else
+- toggle
 */
 
 const $heart = window.document.querySelector(".-heart");
@@ -11,5 +9,11 @@ const $heart = window.document.querySelector(".-heart");
 $heart.addEventListener("click", handleClick);
 
 function handleClick() {
-  console.log("AE");
+  // if ($heart.classList.contains("-active")) {
+  //   $heart.classList.remove("-active"); // Quando tem a class active
+  // } else {
+  //   $heart.classList.add("-active"); // Quando não tem a class active
+  // }
+
+  $heart.classList.toggle("-active");
 }
